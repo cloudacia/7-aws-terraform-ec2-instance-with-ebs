@@ -1,1 +1,1 @@
-# terraform-lab07
+# EC2 with EBS
