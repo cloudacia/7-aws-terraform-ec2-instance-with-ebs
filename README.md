@@ -1,1 +1,83 @@
-# EC2 with EBS
+# AWS Single EC2 instance with EBS
+
+This project aims to deploy a single EC2 instance with a EBS volume attached.
+
+**Built with**
+
+Terraform manages AWS infrastructure deploymenet.
+
+**Requirements**
+
+1. AWS account
+2. IAM user with admin privileges
+3. Access and secret keys
+4. AWS CLI
+5. Terraform installed
+
+**AWS resources created**
+
+* 1 x VPC
+* 1 x Public subnets
+* 1 x Internet Gateway
+* 1 x EC2
+* 1 x EBS
+* 1 x EBS attachment
+* 1 x Security Groups
+
+**Getting started**
+
+Clone the repository locally in your system:
+
+`git clone`
+
+Deploy the code in your AWS account with Terraform
+
+`cd directory`
+
+`terraform init`
+
+`terraform validate`
+
+`terraform plan`
+
+`terraform apply`
+
+`terraform destroy`
+
+**Folder structure options and naming conventions for software projects**
+```
+.
+|-- main.tf                 # AWS provider's configuration
+|-- networking.tf           # VPC, subnet, routing tables, etc.
+|-- computing_ec2.tf        # EC2 instances setting
+|-- security.tf             # Security groups
+|-- ssh_keys.tf             # EC2 public key
+|-- ebs.tf                  # EBS volume and attachment
+|-- variables.tf            # Variables
+|-- output.tf               # Output values
+|-- diagram01.jpeg          # AWS network layout
+|-- LICENSE.txt
+|-- README.md
+```
+
+**Architecture**
+
+![Screenshot](diagram01.jpeg)
+
+**Contributing**
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+If you have a suggestion to improve this, please fork the repo and create a pull request. You can also open an issue with the tag "enhancement".
+
+Don't forget to give the project a star! Thanks again!
+
+**License**
+
+It is distributed under the MIT License. See LICENSE.txt for more information.
+
+**Contact**
+
+Name: Eugenio Duarte
+
+Email: eduarte@cloudacia.com
